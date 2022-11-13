@@ -1,0 +1,4 @@
+base\BaseTest.class
+listeners\TestNGListeners.class
+MenuTest.class
+LoginAndRegisterTest.class
