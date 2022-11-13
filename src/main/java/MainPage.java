@@ -18,6 +18,14 @@ public class MainPage extends BasePage {
     @FindBy(css = "#category-6")
     private WebElement accessoriesPageBtn;
 
+    @FindBy(css = ".user-info .hidden-sm-down")
+    private WebElement signInBtn;
+
+    public SignInPage signInClick(){
+        signInBtn.click();
+        return new SignInPage(driver);
+    }
+
     public void accessoriesPageClick() {
         accessoriesPageBtn.click();
     }
